@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pied Piper Wave 2 -Personal Project TS-</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+   </head>
+   <body>
+      <h5>Pied Piper Wave2 Personal Project -TS-</h5>
+      <header style="background-color:green">&nbsp;</header>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-6">
+               <div class="container">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th colspan="3">Brightness</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Max</td>
+                           <td>Min</td>
+                           <td>Ave</td>
+                        </tr>
+                        <tr>
+                           <td>{{b_max_val}}</td>
+                           <td>{{b_min_val}}</td>
+                           <td>{{b_ave_val}}</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3"><img {{bri_ch}}></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class="col-xs-6">
+               <div class="container">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th colspan="3">Temperature</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Max</td>
+                           <td>Min</td>
+                           <td>Ave</td>
+                        </tr>
+                        <tr>
+                           <td>{{t_max_val}}</td>
+                           <td>{{t_min_val}}</td>
+                           <td>{{t_ave_val}}</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3"><img {{temp_ch}}></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <form action="/" mathod="post"># of Records:<input type="text" name="records">
+      <button type="submit">Send</button>
+      <footer style="background-color:green">&nbsp;</footer>
+   </body>
+</html>

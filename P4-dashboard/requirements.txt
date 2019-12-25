@@ -1,0 +1,5 @@
+Flask
+matplotlib
+requests
+json5
+boto3
