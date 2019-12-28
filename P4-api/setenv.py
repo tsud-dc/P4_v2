@@ -1,3 +1,3 @@
 import os
 
-os.environ['port'] = '80'
+os.environ['port'] = ''

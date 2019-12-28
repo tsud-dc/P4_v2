@@ -1,2 +1,2 @@
-db_name = 'env_db'
-col_name_list = ['light', 'temperature']
+db_name = ''
+col_name_list = ['', '']
