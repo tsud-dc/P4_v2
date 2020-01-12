@@ -31,12 +31,7 @@ def draw_chart(data_list, f_name):
     for elem in data_list:
         time_list.append(elem[0])
         vals_list.append(float(elem[1]))
-        
-    if f_name in 'bri_':
-        plt.ylabel = 'Brightness'
-    elif f_name in 'temp_':
-        plt.ylabel = 'Temperature(Celsius)'
-        
+
     plt.rcParams["font.size"] = 8 
     plt.figure(figsize=(4, 5))
     plt.xticks(color="None")
