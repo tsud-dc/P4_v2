@@ -101,7 +101,7 @@ def home():
         bri_ch_val = "src=http://{}.public.ecstestdrive.com/{}/{}.png".format(ecs_test_drive['ecs_access_key_id'].split('@')[0], ecs_test_drive['ecs_bucket_name'], bri_fname)
         temp_ch_val = "src=http://{}.public.ecstestdrive.com/{}/{}.png".format(ecs_test_drive['ecs_access_key_id'].split('@')[0], ecs_test_drive['ecs_bucket_name'], temp_fname)
         
-        return render_template('default.html', b_max_val = vals_list[0], b_min_val = vals_list[1], b_ave_val = vals_list[2], t_max_val = vals_list[3], t_min_val = vals_list[4], t_ave_val = vals_list[5], bri_ch = bri_ch_val, temp_ch = temp_ch_val)
+        return render_template('default.html', b_max_val = vals_list[0], b_min_val = vals_list[1], b_mean_val = vals_list[2], t_max_val = vals_list[3], t_min_val = vals_list[4], t_mean_val = vals_list[5], bri_ch = bri_ch_val, temp_ch = temp_ch_val)
     else:
         return(vals_list)
 
